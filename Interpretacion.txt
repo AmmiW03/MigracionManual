@@ -1,0 +1,661 @@
+#region Creacion de nombres de campos
+
+            for (int i = 0; i < lstNombresColumnas.Count; i++)
+            {
+                switch (lstNombresColumnas[i])
+                {
+                    #region Modulo 1
+
+                    #region Columna 1
+                    case "No."://Interpretación
+                        lstNombresCampos.Add("em_numero");//bd
+                        break;
+
+                    case "Nombre":
+                        lstNombresCampos.Add("em_nombre");
+                        break;
+
+                    case "Compañia":
+                        lstNombresCampos.Add("em_cia");
+                        break;
+
+                    case "Fecha Ingreso":
+                        lstNombresCampos.Add("em_fechai");
+                        break;
+
+                    case "Fecha Antiguedad":
+                        lstNombresCampos.Add("em_fechant");
+                        break;
+
+                    case "Fecha Baja":
+                        lstNombresCampos.Add("em_fechab");
+                        break;
+
+                    case "U.Camb Sal":
+                        lstNombresCampos.Add("em_fechcam");
+                        break;
+
+                    case "Fecha Planta":
+                        lstNombresCampos.Add("em_fecplan");
+                        break;
+
+                    case "Fecha U.Cont.":
+                        lstNombresCampos.Add("em_feculco");
+                        break;
+
+                    case "E. Civ":
+                        lstNombresCampos.Add("em_estciv");
+                        break;
+
+                    case "RFC":
+                        lstNombresCampos.Add("em_rfc");
+                        break;
+
+                    case "No.Alfil IMSS":
+                        lstNombresCampos.Add("em_imss");
+                        break;
+
+                    case "Gpo. IMSS":
+                        lstNombresCampos.Add("em_gruimss");
+                        break;
+
+                    case "Tip Col":
+                        lstNombresCampos.Add("em_tipoemp");
+                        break;
+
+                    case "Tip Nom":
+                        lstNombresCampos.Add("em_tiponom");
+                        break;
+
+                    #endregion
+
+                    #region Columna 2
+
+                    case "Puesto":
+                        lstNombresCampos.Add("em_puesto");
+                        break;
+
+                    case "No, Div":
+                        lstNombresCampos.Add("em_divisio");
+                        break;
+
+                    case "Centro de Costo":
+                        lstNombresCampos.Add("em_depto");
+                        break;
+
+                    case "C. Pago":
+                        lstNombresCampos.Add("em_cpago");
+                        break;
+
+                    case "Turno":
+                        lstNombresCampos.Add("em_turno");
+                        break;
+
+                    case "S.Diario":
+                        lstNombresCampos.Add("em_saldia");
+                        break;
+
+                    case "S.Propor":
+                        lstNombresCampos.Add("em_salprop");
+                        break;
+
+                    case "S.Prom.Prop":
+                        lstNombresCampos.Add("em_salppro");
+                        break;
+
+                    case "S.Prom":
+                        lstNombresCampos.Add("em_salprom");
+                        break;
+
+                    case "Salario":
+                        lstNombresCampos.Add("em_salario");
+                        break;
+
+                    case "T. Sal":
+                        lstNombresCampos.Add("em_tiposal");
+                        break;
+
+                    case "S.D.I":
+                        lstNombresCampos.Add("em_salinte");
+                        break;
+
+                    case "S.D.I. Var":
+                        lstNombresCampos.Add("em_sdivar");
+                        break;
+
+                    case "S.D.I. Ant":
+                        lstNombresCampos.Add("em_asalint");
+                        break;
+
+                    case "S.D.I. Var Ant":
+                        lstNombresCampos.Add("em_avarant");
+                        break;
+                    #endregion
+
+                    #region Columna 3
+
+                    case "Sal. Ant":
+                        lstNombresCampos.Add("em_cambios");
+                        break;
+
+                    case "Sexo":
+                        lstNombresCampos.Add("em_sexo");
+                        break;
+
+                    case "F.Nac":
+                        lstNombresCampos.Add("em_fechnac");
+                        break;
+
+                    case "Z Ec.:
+                        lstNombresCampos.Add("em_ubzona");
+                        break;
+
+                    case "Suc":
+                        lstNombresCampos.Add("em_sucursa");
+                        break;
+
+                    case "M.O":
+                        lstNombresCampos.Add("em_manobra");
+                        break;
+
+                    case "T. San":
+                        lstNombresCampos.Add("em_tiposan");
+                        break;
+
+                    case "Tipo Cont":
+                        lstNombresCampos.Add("em_contra");
+                        break;
+
+                    case "Nivel":
+                        lstNombresCampos.Add("em_nivel");
+                        break;
+
+                    case "Reing":
+                        lstNombresCampos.Add("em_reingre");
+                        break;
+
+                    case "Tab":
+                        lstNombresCampos.Add("em_tabula");
+                        break;
+
+                    case "Sup":
+                        lstNombresCampos.Add("em_super");
+                        break;
+
+                    case "S. Garantia":
+                        lstNombresCampos.Add("em_salgara");
+                        break;
+
+                    case "CURP":
+                        lstNombresCampos.Add("em_curp");
+                        break;
+
+                    case "Cel":
+                        lstNombresCampos.Add("em_celula");
+                        break;
+                    #endregion
+
+                    #region Columna 4
+
+                    case "Gpo":
+                        lstNombresCampos.Add("em_grupo");
+                        break;
+
+                    case "Sub":
+                        lstNombresCampos.Add("em_subgrp");
+                        break;
+
+                    case "S.Tabulado":
+                        lstNombresCampos.Add("m_saltab");
+                        break;
+
+                    case "Incentivo":
+                        lstNombresCampos.Add("em_incenti");
+                        break;
+
+                    case "Dia Eco":
+                        lstNombresCampos.Add("em_diaeco");
+                        break;
+
+                    case "T. Col Ant":
+                        lstNombresCampos.Add("em_tempant");
+                        break;
+
+                    case "T. Nom Ant":
+                        lstNombresCampos.Add("em_tnomant");
+                        break;
+
+                    case "F. Camb. T.Col":
+                        lstNombresCampos.Add("em_fnewnom");
+                        break;
+
+                    case "F.Matrimonio":
+                        lstNombresCampos.Add("em_fecmatr");
+                        break;
+                    #endregion
+
+                    #endregion
+
+                    #region Modulo 2
+
+                    #region Columna 1
+
+                    case "C. ISPT":
+                        lstNombresCampos.Add("em_cispt");
+                        break;
+
+                    case "Ajus Anu.":
+                        lstNombresCampos.Add("em_cajuste");
+                        break;
+
+                    case "C. IMSS":
+                        lstNombresCampos.Add("em_cimss");
+                        break;
+
+                    case "Pag C.S.":
+                        lstNombresCampos.Add("em_cfisica");
+                        break;
+
+                    case "C.Rep PTU":
+                        //Pendiente
+                        lstNombresCampos.Add("");
+                        break;
+
+                    case "C. Aguin":
+                        lstNombresCampos.Add("em_caguina");
+                        break;
+
+                    case "D. Aguin":
+                        lstNombresCampos.Add("em_cdias");
+                        break;
+
+                    case "C.V. Desp":
+                        lstNombresCampos.Add("em_valesde");
+                        break;
+
+                    case "C.V. Com:
+                        lstNombresCampos.Add("em_valesco");
+                        break;
+
+                    case "C.F. Aho.":
+                        lstNombresCampos.Add("em_cfahorr");
+                        break;
+
+                    case "C.P. Asis.":
+                        lstNombresCampos.Add("em_asisten");
+                        break;
+
+                    case "Imp Rec":
+                        lstNombresCampos.Add("em_irecibo");
+                        break;
+
+                    case "Imp Cheq.":
+                        lstNombresCampos.Add("em_iforma");
+                        break;
+
+                    case "Abon Ban":
+                        lstNombresCampos.Add("em_abonar");
+                        break;
+
+                    case "T. Ban":
+                        lstNombresCampos.Add("em_banco");
+                        break;
+                    #endregion
+
+                    #region Columna 2
+
+                    case "Suc Ban":
+                        lstNombresCampos.Add("em_sucurba");
+                        break;
+
+                    case "Plaza Ban.E":
+                        lstNombresCampos.Add("em_plaza");
+                        break;
+
+                    case "Tipo Cta":
+                        lstNombresCampos.Add("em_tipocta");
+                        break;
+
+                    case "Cuenta Banco":
+                        lstNombresCampos.Add("em_cuenta");
+                        break;
+
+                    case "C. INFO":
+                        lstNombresCampos.Add("em_cinfona");
+                        break;
+
+                    case "Cuenta. INFONAVIT":
+                        lstNombresCampos.Add("em_infocre");
+                        break;
+
+                    case "% Dcto. Cred.IFONAVIT":
+                        lstNombresCampos.Add("em_infopor");
+                        break;
+
+                    case "F.I.C. INFONAVIT":
+                        lstNombresCampos.Add("em_fcreinf");
+                        break;
+
+                    case "T.Des. INFONAVIT":
+                        lstNombresCampos.Add("em_tipoinf");
+                        break;
+
+                    case "% Pen Alim.":
+                        lstNombresCampos.Add("em_penspor");
+                        break;
+
+                    case "Importe Pen Alim":
+                        lstNombresCampos.Add("em_pensimp");
+                        break;
+
+                    case "P.V. Aut":
+                        lstNombresCampos.Add("em_porprim");
+                        break;
+
+                    //Pendiente
+                    case "Ind. Vac":
+                        lstNombresCampos.Add("");
+                        break;
+
+                    case "P.Re Vac":
+                        lstNombresCampos.Add("em_pereva");
+                        break;
+
+                    case "Ini P.Vac":
+                        lstNombresCampos.Add("em_inpeva");
+                        break;
+
+                    case "F.Ini.Vac.":
+                        lstNombresCampos.Add("em_fechaiv");
+                        break;
+
+                    #endregion
+
+                    #region Columna 3
+
+                    case "F.Reg.Vac.":
+                        lstNombresCampos.Add("em_retvac");
+                        break;
+
+                    case "SDI para 25 SMDF art 33 del SS":
+                        lstNombresCampos.Add("em_sdia29");
+                        break;
+
+                    case "SDI para 15 SDMF art 33 del SS":
+                        lstNombresCampos.Add("em_sdib29");
+                        break;
+
+                    case "% o cant. a pagar anticipo":
+                        lstNombresCampos.Add("em_anticip");
+                        break;
+
+                    case "Cant. de Anti.Sem":
+                        lstNombresCampos.Add("em_antisem");
+                        break;
+
+                    case "% Bono":
+                        lstNombresCampos.Add("em_porbono");
+                        break;
+
+                    case "Factor Propor":
+                        lstNombresCampos.Add("em_propor");
+                        break;
+
+                    case "Fac.C. Sal.Diario":
+                        lstNombresCampos.Add("em_minimom");
+                        break;
+
+                    case "Reloj Chec.":
+                        lstNombresCampos.Add("em_reloj");
+                        break;
+
+                    case "Act":
+                        lstNombresCampos.Add("em_activi");
+                        break;
+
+                    case "Cuenta Contable":
+                        lstNombresCampos.Add("em_ctacont");
+                        break;
+
+                    case "% Dcto. por Mant.":
+                        lstNombresCampos.Add("em_infoman");
+                        break;
+
+                    case "Asimil. Salario":
+                        lstNombresCampos.Add("em_asimila");
+                        break;
+
+                    case "UMF":
+                        lstNombresCampos.Add("em_imssumf");
+                        break;
+
+                    case "e-Mail e-Mail":
+                        lstNombresCampos.Add("em_email");
+                        break;
+                    #endregion
+
+                    #endregion
+
+                    #region Modulo 3
+
+                    #region Columna 1
+
+                    case "Tel.  ":
+                        lstNombresCampos.Add("rh_telefo");
+                        break;
+
+                    case "Escolaridad":
+                        lstNombresCampos.Add("rh_escolar");
+                        break;
+
+                    case "Cd. Nac.":
+                        lstNombresCampos.Add("rh_nciudad");
+                        break;
+
+                    case "Edo. Nac.":
+                        lstNombresCampos.Add("rh_nestado");
+                        break;
+
+                    case "Calle":
+                        lstNombresCampos.Add("rh_dcalle");
+                        break;
+
+                    case "Colonia":
+                        lstNombresCampos.Add("rh_dcolon");
+                        break;
+
+                    case "Ciudad":
+                        lstNombresCampos.Add("rh_dciudad");
+                        break;
+
+                    case "Estado":
+                        lstNombresCampos.Add("rh_destado");
+                        break;
+
+                    case "Municipio":
+                        lstNombresCampos.Add("rh_dmunici");
+                        break;
+
+                    case "C.P.":
+                        lstNombresCampos.Add("rh_dcp");
+                        break;
+
+                    case "Nombre del padre":
+                        lstNombresCampos.Add("rh_npadre");
+                        break;
+
+                    case "Nombre del madre":
+                        lstNombresCampos.Add("rh_nmadre");
+                        break;
+
+                    case "P Fin":
+                        lstNombresCampos.Add("rh_fpadre");
+                        break;
+
+                    case "M Fin":
+                        lstNombresCampos.Add("rh_fmadre");
+                        break;
+
+                    case "Nacionalidad":
+                        lstNombresCampos.Add("rh_nacion");
+                        break;
+                    #endregion
+
+                    #region Columna 2
+
+                    case "1er. Asegurado GMM":
+                        lstNombresCampos.Add("rh_gmmaseg");
+                        break;
+
+                    case "F.Nac. Asegurado":
+                        lstNombresCampos.Add("rh_gmmfnac");
+                        break;
+
+                    case "Sexo":
+                        lstNombresCampos.Add("rh_gmmsexo");
+                        break;
+
+                    case "Paren":
+                        lstNombresCampos.Add("rh_gmmpare");
+                        break;
+
+                    case "Nom. p/repor emergencia":
+                        lstNombresCampos.Add("rh_gmmpor");
+                        break;
+
+                    case "Primer Nombre p/emergencia":
+                        lstNombresCampos.Add("rh_noavis1");
+                        break;
+
+                    case "Tel.del emergente":
+                        lstNombresCampos.Add("rh_teavis1");
+                        break;
+
+                    case "Parentesco":
+                        lstNombresCampos.Add("rh_paavis1");
+                        break;
+
+                    case "Segundo Nombre de emergencia":
+                        lstNombresCampos.Add("rh_noavis2");
+                        break;
+
+                    case "Tel del emergente":
+                        lstNombresCampos.Add("rh_teavis2");
+                        break;
+
+                    case "Parentesco":
+                        lstNombresCampos.Add("rh_paavis2");
+                        break;
+
+                    case "Fotografia Asoc.":
+                        lstNombresCampos.Add("rh_picture");
+                        break;
+
+                    case "Cve. P.GMM":
+                        lstNombresCampos.Add("rh_gmmpcve");
+                        break;
+
+                    case "Area Col":
+                        lstNombresCampos.Add("rh_area");
+                        break;
+
+                    case "Oficio":
+                        lstNombresCampos.Add("rh_oficio");
+                        break;
+                    #endregion
+
+                    #region Columna 3
+
+                    case "Estat":
+                        lstNombresCampos.Add("be_estatur");
+                        break;
+
+                    case "Peso":
+                        lstNombresCampos.Add("be_peso");
+                        break;
+
+                    case "GMM":
+                        lstNombresCampos.Add("");
+                        break;
+
+                    case "Seg Vida":
+                        lstNombresCampos.Add("");
+                        break;
+
+                    case "Suma  Aseg. GMM":
+                        lstNombresCampos.Add("rh_gmmsuma");
+                        break;
+
+                    case "Plan Seg.  Vida":
+                        lstNombresCampos.Add("rh_plansv");
+                        break;
+
+                    case "P.A. S.V.":
+                        lstNombresCampos.Add("rh_aplansv");
+                        break;
+
+                    case "Prima Aseg.S.V.":
+                        lstNombresCampos.Add("rh_psvsuma");
+                        break;
+
+                    case "Ubicación del Colaborador":
+                        lstNombresCampos.Add("rh_ubicado");
+                        break;
+
+                    case "Estat.":
+                        lstNombresCampos.Add("rh_estatu");
+                        break;
+
+                    case "Peso":
+                        lstNombresCampos.Add("rh_peso");
+                        break;
+
+                    case "Talla Camisa":
+                        lstNombresCampos.Add("rh_tallac");
+                        break;
+
+                    case "Talla Pantalon":
+                        lstNombresCampos.Add("rh_tallap");
+                        break;
+
+                    case "Calzado":
+                        lstNombresCampos.Add("rh_calzado");
+                        break;
+
+                    case "Color Ojos":
+                        lstNombresCampos.Add("rh_coloroj");
+                        break;
+                    #endregion
+
+                    #region Columna 4
+
+                    case "Color Cabello":
+                        lstNombresCampos.Add("rh_colorca");
+                        break;
+
+                    case "Color Piel":
+                        lstNombresCampos.Add("rh_piel");
+                        break;
+
+                    case "Señas Particulares":
+                        lstNombresCampos.Add("rh_separt");
+                        break;
+
+                    case "Estudio Soc-Eco":
+                        lstNombresCampos.Add("rh_soceco");
+                        break;
+
+                    case "Alta Seg. Pub.":
+                        lstNombresCampos.Add("rh_segpub");
+                        break;
+
+                    case "Examen Antidoping":
+                        lstNombresCampos.Add("rh_antidop");
+                        break;
+                        #endregion
+
+                        #endregion
+                }
+            }
+
+            #endregion
